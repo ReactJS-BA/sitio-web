@@ -1,12 +1,7 @@
-import React from 'react';
-import './Social.css';
+import './Social.css'
 
 function Social() {
-  return (
-    <div className="social">
-      Social v2
-    </div>
-  );
+  return <div className="social">Social v2</div>
 }
 
-export default Social;
+export default Social
