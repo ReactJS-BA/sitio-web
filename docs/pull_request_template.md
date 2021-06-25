@@ -1,35 +1,31 @@
 ## PR Area
 
-<!-- Check areas your PR covers using "x", REMOVE others -->
+<!-- Comprobrar las areas que cubre su PR utilizando "x", ELIMINAR otras -->
 
 - [ ] Backend
 - [ ] Frontend
 - [ ] Testing
-- [ ] Other: <!-- Please describe -->
+- [ ] Otro: <!-- Por favor describir -->
 
-## Type of change
+## Tipo de cambio
 
-_What kind of change does this PR introduce?_
+_Que tipo de cambio introduce este PR?_
 
-<!-- Check the ones that apply to this PR using "x", REMOVE others -->
+<!-- Marque los que se aplican a este PR utilizando "x", ELIMINAR otras -->
 
 - [ ] Bugfix
 - [ ] Feature
-- [ ] Other: <!-- Please describe -->
+- [ ] Otro: <!-- Por favor describir -->
 
-## Description
+## Descripcion
 
-<!-- Add a few bullets * describing your changes -->
+<!-- Añadir algunos puntos * que describan los cambios introducidos -->
 
-#### Evidence screenshots
+#### Capturas de pantalla
 
-<!-- Please drag and drop to upload evidence screenshots of UI that is new or has big changes  -->
+<!-- Por favor, arrastre y suelte para subir capturas de pantalla de la UI que es nueva o tiene grandes cambios  -->
 
 ## Reviewer checklist
 
-- [ ] I have run the code (If applicable)
-- [ ] I have reviewed and run any integration tests (if applicable)
-
-_All the points in **[Security & risks](#risks)** above are:_
-
-- [ ] Not present or have been mitigated 👍
+- [ ] He ejecutado el codigo (si es aplicable)
+- [ ] He revisado y ejecutado unit tests (si es aplicable)
