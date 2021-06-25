@@ -1,16 +1,16 @@
-import Hero from 'src/Hero/Hero'
-import Social from 'src/Social/Social'
+import Hero from "src/Hero/Hero";
+import Social from "src/Social/Social";
 
-import './App.css'
-import Section from 'src/Section/Section'
+import "./App.css";
+import Section from "src/Section/Section";
 
-const JoinUs = () => <div>JoinUs</div>
-const NextEvent = () => <div>NextEvent</div>
-const Tweets = () => <div>Tweets</div>
-const Sponsors = () => <div>Sponsors</div>
-const Organizers = () => <div>Organizers</div>
-const Communities = () => <div>Communities</div>
-const Footer = () => <div>Footer</div>
+const JoinUs = () => <div>JoinUs</div>;
+const NextEvent = () => <div>NextEvent</div>;
+const Tweets = () => <div>Tweets</div>;
+const Sponsors = () => <div>Sponsors</div>;
+const Organizers = () => <div>Organizers</div>;
+const Communities = () => <div>Communities</div>;
+const Footer = () => <div>Footer</div>;
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
       <Communities />
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
