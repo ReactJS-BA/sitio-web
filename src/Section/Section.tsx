@@ -1,5 +1,4 @@
-import React from 'react';
-import './Section.css';
+import "./Section.css";
 
 interface Props {
   /** Clases de CSS que se agregan al componente padre */
@@ -11,11 +10,7 @@ interface Props {
 function Section({ ...props }: Props) {
   const cssClasses = props.cssClasses || "section";
 
-  return (
-    <div className={cssClasses}>
-      { props.children }
-    </div>
-  );
+  return <div className={cssClasses}>{props.children}</div>;
 }
 
 export default Section;
