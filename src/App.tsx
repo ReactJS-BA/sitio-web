@@ -1,9 +1,8 @@
-import React from 'react';
-import Hero from './Hero/Hero';
-import Social from './Social/Social';
+import Hero from "src/Hero/Hero";
+import Social from "src/Social/Social";
 
-import './App.css';
-import Section from './Section/Section';
+import "./App.css";
+import Section from "src/Section/Section";
 
 const JoinUs = () => <div>JoinUs</div>;
 const NextEvent = () => <div>NextEvent</div>;
