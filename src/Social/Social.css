@@ -4,24 +4,15 @@
   background: #000000;
   display: flex;
   justify-content: center;
-
   color: white;
   font-size: x-large;
 }
 ul{
   list-style: none;
-  display: flex;
-  
-  
+  display: flex;  
   min-width: 800px;
   justify-content: space-between;
-  
-  
-
 }
-
-
-
 ul li {
   
   display: flex;
@@ -46,12 +37,5 @@ ul li:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
-  
-  
-  
-  
-
 }
 
