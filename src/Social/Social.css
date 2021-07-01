@@ -13,22 +13,21 @@ ul{
   min-width: 800px;
   justify-content: space-between;
 }
-ul li {
-  
+
+ul li {  
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 15px;
   justify-content: space-around;
   opacity: 0.5;
-
 }
+
 ul li:hover{
   opacity: 1;
 }
 
-.socialIcons{
- 
+.socialIcons{ 
   background-color:blue;
   border-radius: 100%;
   color:gainsboro;
