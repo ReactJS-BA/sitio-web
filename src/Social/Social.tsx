@@ -6,7 +6,7 @@ import {MdEmail} from "react-icons/md"
 
  function Social() {
   return (
-    <React.Fragment>
+ 
       <div className="social">
         <ul>
           <li> <div className="socialIcons" > <TiSocialTwitter size={40} /></div>Twitter</li>
@@ -17,7 +17,7 @@ import {MdEmail} from "react-icons/md"
         </ul>
       </div>
    
-    </React.Fragment>
+   
   );
 }
 
