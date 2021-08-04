@@ -7,14 +7,14 @@
   color: white;
   font-size: x-large;
 }
-ul{
+ul {
   list-style: none;
-  display: flex;  
+  display: flex;
   min-width: 800px;
   justify-content: space-between;
 }
 
-ul li {  
+ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,18 +23,17 @@ ul li {
   opacity: 0.5;
 }
 
-ul li:hover{
+ul li:hover {
   opacity: 1;
 }
 
-.socialIcons{ 
-  background-color:#002FF4;
+.socialIcons {
+  background-color: #002ff4;
   border-radius: 100%;
-  color:gainsboro;
+  color: gainsboro;
   min-width: 70px;
   min-height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
