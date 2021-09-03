@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import SocialLinkIcon from "src/components/images/SocialLinkIcon";
+
 const SocialContainer = styled.div`
   width: 100%;
   height: 148px;
@@ -21,12 +23,9 @@ const StyledLi = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 15px;
   justify-content: space-around;
   opacity: 0.5;
 `;
-
-import SocialLinkIcon from "src/components/images/SocialLinkIcon";
 
 const Social: React.FC = () => {
   return (

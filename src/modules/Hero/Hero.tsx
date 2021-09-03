@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import heroBackground from "src/assets/images/backgrounds/hero-background.jpeg";
 
 const HeroContainer = styled.div`

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Box } from "@material-ui/core";
+import { Box, Typography } from "@material-ui/core";
 
 import { ButtonBase as Button } from "src/components/inputs/ButtonBase";
 import IconIllustration, {
@@ -34,6 +34,15 @@ const StyledSocialLink = styled(Button)`
   }
 `;
 
+const SocialLinkLabel = styled(Typography)`
+  && {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Ubuntu Mono", monospace;
+    line-height: 100%;
+  }
+`;
+
 const SocialLinkContainer = styled(Box)`
   display: flex;
   flex-direction: column;
@@ -58,7 +67,7 @@ const SocialLinkIcon: React.FC<SocialLinkIconProps> = ({
       >
         <IconIllustration type={type} size={size} />
       </StyledSocialLink>
-      {label}
+      <SocialLinkLabel>{label}</SocialLinkLabel>
     </SocialLinkContainer>
   );
 };
