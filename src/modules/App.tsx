@@ -1,8 +1,9 @@
-import Hero from "src/Hero/Hero";
-import Social from "src/Social/Social";
+import SectionsWrapper from "src/components/layouts/SectionsWrapper";
+
+import Hero from "src/modules/Hero/Hero";
+import Social from "src/modules/Social/Social";
 
 import "./App.css";
-import Section from "src/Section/Section";
 
 const JoinUs = () => <div>JoinUs</div>;
 const NextEvent = () => <div>NextEvent</div>;
@@ -12,14 +13,14 @@ const Organizers = () => <div>Organizers</div>;
 const Communities = () => <div>Communities</div>;
 const Footer = () => <div>Footer</div>;
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <Hero />
       <Social />
-      <Section>
+      <SectionsWrapper>
         <div>Contenido de la seccion</div>
-      </Section>
+      </SectionsWrapper>
       <JoinUs />
       <NextEvent />
       <Tweets />
@@ -29,6 +30,6 @@ function App() {
       <Footer />
     </>
   );
-}
+};
 
 export default App;
