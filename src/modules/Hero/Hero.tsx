@@ -6,6 +6,8 @@ import Img from "src/components/common/Img";
 import heroBackground from "src/assets/images/backgrounds/hero-background.jpeg";
 import rectangleGroup from "src/assets/images/logos/reactBaLogo.svg";
 
+// TODO: abstract media values
+
 const HeroContainer = styled.div`
   width: 100%;
   height: auto;
@@ -26,11 +28,20 @@ const HeroMainContent = styled.div`
   & > :first-child {
     margin-right: 40px;
   }
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+    margin: 100px 10px;
+  }
 `;
 
 const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 960px) {
+    align-items: center;
+  }
 `;
 
 const ReactTitle = styled(Typography)`
@@ -44,6 +55,10 @@ const ReactTitle = styled(Typography)`
     font-weight: 800;
     line-height: 149px;
     letter-spacing: 3px;
+
+    @media (max-width: 960px) {
+      font-size: 50px;
+    }
   }
 `;
 
@@ -54,10 +69,18 @@ const BuenosAiresTitle = styled(Typography)`
     font-family: "MuseoModerno";
     font-weight: 700;
     line-height: 112px;
+
+    @media (max-width: 960px) {
+      font-size: 50px;
+    }
   }
 `;
 
-const ReactBaLogo = styled(Img)``;
+const ReactBaLogo = styled(Img)`
+  @media (max-width: 960px) {
+    margin: 0 !important;
+  }
+`;
 
 const Hero: React.FC = () => {
   return (
