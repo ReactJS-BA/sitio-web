@@ -29,6 +29,7 @@ const App: React.FC = () => {
       <SectionsWrapper>
         <div>Contenido de la seccion</div>
       </SectionsWrapper>
+      {/* TODO: acomodar secciones cuando esten todas listas  */}
       <Organizers />
       <JoinUs />
       <NextEvent />
