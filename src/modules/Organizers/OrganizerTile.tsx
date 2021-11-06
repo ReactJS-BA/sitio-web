@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { Box } from "@material-ui/core";
 
-import Img, { ImageProps } from "src/components/images/Img";
+import Img, { ImageProps } from "src/components/common/Img";
 
 interface OrganizerTileProps extends ImageProps {
   name: string;
