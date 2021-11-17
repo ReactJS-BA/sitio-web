@@ -4,11 +4,13 @@ import SectionsWrapper from "src/components/layouts/SectionsWrapper";
 import Hero from "src/modules/Hero/Hero";
 import Social from "src/modules/Social/Social";
 import Organizers from "src/modules/Organizers/Organizers";
+import PastEvents from "src/modules/PastEvents/PastEvents";
+import NextEvent from "src/modules/NextEvent/NextEvent";
 
 import "./App.css";
 
 const JoinUs = () => <div>JoinUs</div>;
-const NextEvent = () => <div>NextEvent</div>;
+// const NextEvent = () => <div>NextEvent</div>;
 const Tweets = () => <div>Tweets</div>;
 const Sponsors = () => <div>Sponsors</div>;
 const Communities = () => <div>Communities</div>;
@@ -29,10 +31,12 @@ const App: React.FC = () => {
       <SectionsWrapper>
         <div>Contenido de la seccion</div>
       </SectionsWrapper>
+      <NextEvent />
+      <PastEvents />
       {/* TODO: acomodar secciones cuando esten todas listas  */}
       <Organizers />
       <JoinUs />
-      <NextEvent />
+      {/* <NextEvent /> */}
       <Tweets />
       <Sponsors />
       <Communities />
