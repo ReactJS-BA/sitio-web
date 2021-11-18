@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import Box from "@material-ui/core/Box";
 
+import { ButtonBase as Button } from "src/components/buttons/ButtonBase";
+
 const MainContainer = styled(Box)`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -12,7 +14,6 @@ const MainContainer = styled(Box)`
   @media (max-width: 960px) {
     display: flex;
     flex-direction: column;
-    border: 4px solid #64dedf;
   }
 `;
 
@@ -27,7 +28,7 @@ const LayoutLeftSide = styled(Box)`
     padding-top: 50px;
     padding-bottom: 70px;
     align-items: center;
-    margin: 0;
+    margin: 0 150px;
   }
 `;
 
@@ -54,7 +55,7 @@ const Title = styled.p`
 
   @media (max-width: 960px) {
     font-size: 2rem;
-    margin: 0px;
+    margin-bottom: 20px;
     line-height: 50px;
   }
 `;
@@ -65,12 +66,27 @@ const Subtitle = styled.p`
   font-family: "MuseoModerno";
   font-weight: 700;
   line-height: 30px;
-  margin: 0;
+  margin: 0 0 45px 0;
 
   @media (max-width: 960px) {
     font-size: 2rem;
-    margin: 0px;
+    margin-bottom: 40px;
     line-height: 50px;
+    text-align: center;
+  }
+`;
+
+const StyledButton = styled(Button)`
+  &.MuiButton-root {
+    font-size: 1.125rem;
+    font-family: "MuseoModerno";
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #002ff4;
+    background-color: #b0f7e5;
+    border-radius: 32px;
+    width: 165px;
   }
 `;
 
@@ -82,8 +98,19 @@ const Sponsors = () => {
         <Subtitle>
           Si sos o representas a una empresa, tu propuesta de sponsorship aquí
         </Subtitle>
+        <StyledButton
+          endIcon={
+            <span role="img" aria-label="Finger pointing right">
+              👉
+            </span>
+          }
+          href={`https://docs.google.com/forms/d/e/1FAIpQLSflqFjUY_nUUYv7S-vr4xLd9QDVb5mhg64S5aWsy2qIJJS9zQ/viewform`}
+          target="_blank"
+        >
+          Escribinos
+        </StyledButton>
       </LayoutLeftSide>
-      <LayoutRightSide></LayoutRightSide>
+      <LayoutRightSide>LOGO?</LayoutRightSide>
     </MainContainer>
   );
 };
