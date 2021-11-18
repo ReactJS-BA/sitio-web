@@ -106,7 +106,9 @@ const Organizers: React.FC = () => {
       </OrganizerHeader>
       <OrganizerContent>
         {organizerData.length &&
-          organizerData.map((organizer) => <OrganizerTile {...organizer} />)}
+          organizerData.map((organizer, index) => (
+            <OrganizerTile key={index} {...organizer} />
+          ))}
       </OrganizerContent>
     </MainWrapper>
   );
