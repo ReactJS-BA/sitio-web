@@ -14,6 +14,7 @@ const MainContainer = styled(Box)`
   @media (max-width: 960px) {
     display: flex;
     flex-direction: column;
+    height: auto;
   }
 `;
 
