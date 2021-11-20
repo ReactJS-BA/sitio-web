@@ -91,7 +91,7 @@ const StyledButton = styled(Button)`
   }
 `;
 
-const Sponsors = () => {
+const Sponsors: React.FC = () => {
   return (
     <MainContainer>
       <LayoutLeftSide>
