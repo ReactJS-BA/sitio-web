@@ -21,14 +21,13 @@ const MainContainer = styled(Box)`
 `;
 
 const FooterLabel = styled(Box)`
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: "MuseoModerno";
   font-weight: 400;
   line-height: 16px;
   color: #ffffff;
 
   @media (max-width: 960px) {
-    font-size: 1rem;
     margin: 0px;
     line-height: 50px;
   }
@@ -67,7 +66,7 @@ const FooterTitle = styled.p`
   }
 `;
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <MainContainer>
       <FooterTitleContainer>
