@@ -8,12 +8,10 @@ import PastEvents from "src/modules/PastEvents/PastEvents";
 import NextEvent from "src/modules/NextEvent/NextEvent";
 import Sponsors from "src/modules/Sponsors/Sponsors";
 import Footer from "src/modules/Footer/Footer";
+import LastTweets from "src/modules/LastTweets/LastTweets";
+import Communities from "src/modules/Communities/Communities";
 
 import "./App.css";
-
-const JoinUs = () => <div>JoinUs</div>;
-const Tweets = () => <div>Tweets</div>;
-const Communities = () => <div>Communities</div>;
 
 const StyledLayout = styled.div`
   padding: 0;
@@ -32,11 +30,10 @@ const App: React.FC = () => {
         <div>Contenido de la seccion</div>
       </SectionsWrapper>
       <NextEvent />
+      <LastTweets />
       <Sponsors />
       <PastEvents />
       <Organizers />
-      <JoinUs />
-      <Tweets />
       <Communities />
       <Footer />
     </StyledLayout>
