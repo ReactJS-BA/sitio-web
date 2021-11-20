@@ -71,7 +71,7 @@ const Subtitle = styled.p`
   @media (max-width: 960px) {
     font-size: 2rem;
     margin-bottom: 40px;
-    line-height: 50px;
+    line-height: 30px;
     text-align: center;
   }
 `;
