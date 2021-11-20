@@ -28,10 +28,12 @@ const PastEventsTitle = styled.p`
   font-family: "MuseoModerno";
   font-weight: normal;
   line-height: 45px;
+  margin-top: 70px;
   margin-bottom: 70px;
 
   @media (max-width: 960px) {
     font-size: 2rem;
+    margin-top: 30px;
     margin-bottom: 20px;
   }
 `;
