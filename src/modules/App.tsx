@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { ReactQueryDevtools } from "react-query/devtools";
+
 import SectionsWrapper from "src/components/layouts/SectionsWrapper";
 
 import Hero from "src/modules/Hero/Hero";
@@ -22,21 +24,24 @@ const StyledLayout = styled.div`
 
 const App: React.FC = () => {
   return (
-    <StyledLayout>
-      {/* TODO: acomodar secciones cuando esten todas listas  */}
-      <Hero />
-      <Social />
-      <SectionsWrapper>
-        <div>Contenido de la seccion</div>
-      </SectionsWrapper>
-      <NextEvent />
-      <LastTweets />
-      <Sponsors />
-      <PastEvents />
-      <Organizers />
-      <Communities />
-      <Footer />
-    </StyledLayout>
+    <>
+      <StyledLayout>
+        {/* TODO: acomodar secciones cuando esten todas listas  */}
+        <Hero />
+        <Social />
+        <SectionsWrapper>
+          <div>Contenido de la seccion</div>
+        </SectionsWrapper>
+        <NextEvent />
+        <LastTweets />
+        <Sponsors />
+        <PastEvents />
+        <Organizers />
+        <Communities />
+        <Footer />
+      </StyledLayout>
+      <ReactQueryDevtools />
+    </>
   );
 };
 
