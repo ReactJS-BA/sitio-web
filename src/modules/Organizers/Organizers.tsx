@@ -5,41 +5,7 @@ import { Box } from "@material-ui/core";
 import OrganizerTile from "src/modules/Organizers/OrganizerTile";
 import rectangleGroup from "src/assets/images/shapes/rectangleGroup.svg";
 
-// TODO: replace mock data ?
-const imageHere = "https://bennettfeely.com/clippy/pics/pittsburgh.jpg";
-
-const organizerData = [
-  {
-    name: "@name_test1",
-    src: imageHere,
-    alt: "Organizer name 1",
-  },
-  {
-    name: "@newUserTest2",
-    src: imageHere,
-    alt: "Organizer name 2",
-  },
-  {
-    name: "@otherUser3",
-    src: imageHere,
-    alt: "Organizer name 3",
-  },
-  {
-    name: "@name4",
-    src: imageHere,
-    alt: "Organizer name 4",
-  },
-  // {
-  //   name: "@userUser5",
-  //   src: imageHere,
-  //   alt: "Organizer name 5",
-  // },
-  // {
-  //   name: "@userUser6",
-  //   src: imageHere,
-  //   alt: "Organizer name 6",
-  // },
-];
+import { organizerData } from "src/mock/organizers/organizerData";
 
 const MainWrapper = styled(Box)`
   display: flex;

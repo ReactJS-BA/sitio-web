@@ -55,13 +55,15 @@ const OrganizerName = styled.p`
 `;
 
 const OrganizerTile: React.FC<OrganizerTileProps> = ({ name, src, alt }) => {
+  const currentName = `@${name.trim().replace(/\s/g, "")}`;
+
   return (
     <OrganizerTileContainer>
       <ImageWrapper>
         <HexagonImg src={src} alt={alt} />
       </ImageWrapper>
 
-      <OrganizerName>{name}</OrganizerName>
+      <OrganizerName>{currentName}</OrganizerName>
     </OrganizerTileContainer>
   );
 };
