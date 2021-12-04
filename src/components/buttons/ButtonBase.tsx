@@ -14,6 +14,7 @@ export interface ButtonBaseProps extends ButtonProps {
  * Tertiary (color="secondary")
  * Link (variant="text")
  */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const StyledButton = styled(({ hasMultipleWords, ...props }) => (
   <Button {...props} />
 ))(
@@ -40,10 +41,14 @@ export const ButtonBase = <C extends React.ElementType>({
   children,
   to,
   endIcon,
+  target,
+  rel,
   variant = "contained",
   color = "primary",
   ...props
 }: ButtonBaseProps & ButtonProps<C, { component?: C }>) => {
+  const btnRel = target === "_blank" ? "noopener noreferrer" : rel;
+
   const childContainsMultipleWords =
     typeof children === "string" && children.trim().split(" ").length > 1;
 
@@ -56,6 +61,8 @@ export const ButtonBase = <C extends React.ElementType>({
       color={color}
       role={to && "link"}
       to={to}
+      target={target}
+      rel={btnRel}
       disableElevation
       disableRipple
     >
