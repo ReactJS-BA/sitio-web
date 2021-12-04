@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Box, Typography } from "@material-ui/core";
 
-import { ButtonBase as Button } from "src/components/inputs/ButtonBase";
+import { ButtonBase as Button } from "src/components/buttons/ButtonBase";
 import IconIllustration, {
   IllustrationTypes,
 } from "src/components/images/IconIllustration";
