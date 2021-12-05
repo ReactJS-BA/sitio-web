@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import SectionsWrapper from "src/components/layouts/SectionsWrapper";
 
 // ALL SECTIONS
 import Hero from "src/modules/Hero/Hero";
@@ -12,6 +11,7 @@ import Footer from "src/modules/Footer/Footer";
 import LastTweets from "src/modules/LastTweets/LastTweets";
 import Communities from "src/modules/Communities/Communities";
 import Participate from "src/modules/Participate/Participate";
+import AboutUs from "src/modules/AboutUs/AboutUs";
 
 import "./App.css";
 
@@ -25,12 +25,9 @@ const StyledLayout = styled.div`
 const App: React.FC = () => {
   return (
     <StyledLayout>
-      {/* TODO: acomodar secciones cuando esten todas listas  */}
       <Hero />
       <Social />
-      <SectionsWrapper>
-        <div>Contenido de la seccion</div>
-      </SectionsWrapper>
+      <AboutUs />
       <Participate />
       <NextEvent />
       <LastTweets />

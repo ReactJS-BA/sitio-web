@@ -44,6 +44,7 @@ const PastEvents: React.FC = () => {
       <PastEventsHeader>
         <PastEventsTitle>Host Pasados</PastEventsTitle>
       </PastEventsHeader>
+      {/* TODO: add events here */}
       <PastEventsContent></PastEventsContent>
     </PastEventsContainer>
   );

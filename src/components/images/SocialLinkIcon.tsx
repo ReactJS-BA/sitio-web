@@ -26,6 +26,11 @@ const StyledSocialLink = styled(Button)`
     align-items: center;
     margin-bottom: 8px;
     opacity: 0.5;
+
+    @media (max-width: 960px) {
+      min-width: 60px;
+      min-height: 65px;
+    }
   }
 
   &&.MuiButton-containedPrimary:hover {
