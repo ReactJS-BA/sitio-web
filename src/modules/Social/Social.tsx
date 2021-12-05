@@ -17,6 +17,12 @@ const StyledUl = styled.ul`
   display: flex;
   min-width: 800px;
   justify-content: space-between;
+  padding: 0;
+
+  @media (max-width: 960px) {
+    display: flex;
+    min-width: 400px;
+  }
 `;
 
 const StyledLi = styled.li`

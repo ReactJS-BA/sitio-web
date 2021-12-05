@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Box from "@material-ui/core/Box";
+import { Divider as MuiDivider } from "@material-ui/core";
 
 import { ButtonBase as Button } from "src/components/buttons/ButtonBase";
 import { ReactComponent as ArrowRight } from "src/assets/images/icons/arrowRight.svg";
@@ -18,7 +19,7 @@ const MainContainer = styled(Box)`
   background: #021037;
   font-size: x-large;
   height: 450px;
-  padding: 0 40px;
+  padding: 120px 40px 0 40px;
   width: auto;
 
   @media (max-width: 960px) {
@@ -55,7 +56,7 @@ const StatsContent = styled(Box)`
   @media (max-width: 960px) {
     align-items: center;
     margin-bottom: 50px;
-    padding: 45px 0 0 0;
+    padding: 45px 0 0;
 
     background: url(${rectangleGroup}) top 32px left 1px no-repeat,
       url(${rectangleGroupTopRight}) top 30px right -16px no-repeat,
@@ -158,21 +159,44 @@ const StatsSubtitle = styled.p`
   }
 `;
 
+const Divider = styled(MuiDivider)`
+  && {
+    border: 1px solid #002ff4;
+    width: 72px;
+    margin-bottom: 40px;
+  }
+`;
+
 // TODO: replace stats data with accurate Meetup data
 const Participate: React.FC = () => {
   return (
     <MainContainer>
       <ParticipateContent>
+        <Divider />
+
         <ParticipateTitle>Participar</ParticipateTitle>
+
         <ParticipateDescription>
           Queremos que más personas formen parte de esta comunidad, te gustaría
           participar?
         </ParticipateDescription>
 
         <ActionContainter>
-          {/* Add links to buttons */}
-          <StyledButton endIcon={<ArrowRight />}>Dar una charla</StyledButton>
-          <StyledButton endIcon={<ArrowRight />}>Ser sponsor</StyledButton>
+          <StyledButton
+            endIcon={<ArrowRight />}
+            href={`https://docs.google.com/forms/d/e/1FAIpQLSdKDkWgnUJmxA2yg4C5DH_CTDIUzbY8AjKDUbVUQXeH1BLT3A/viewform`}
+            target="_blank"
+          >
+            Dar una charla
+          </StyledButton>
+
+          <StyledButton
+            endIcon={<ArrowRight />}
+            href={`https://docs.google.com/forms/d/e/1FAIpQLSflqFjUY_nUUYv7S-vr4xLd9QDVb5mhg64S5aWsy2qIJJS9zQ/viewform`}
+            target="_blank"
+          >
+            Ser sponsor
+          </StyledButton>
         </ActionContainter>
       </ParticipateContent>
 
