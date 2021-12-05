@@ -45,6 +45,7 @@ const Communities: React.FC = () => {
         <CommunitiesTitle>Comunidades</CommunitiesTitle>
         <CommunitiesTitle>Amigas</CommunitiesTitle>
       </CommunitiesHeader>
+      {/* TODO: add communities */}
       Communities
     </MainContainer>
   );
