@@ -1,14 +1,18 @@
 import styled from "styled-components";
 import Box from "@material-ui/core/Box";
 
+import PolygonTile from "src/components/common/PolygonTile";
+
+import { communitiesData } from "src/mock/communities/communitiesData";
+
 const MainContainer = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-items: center;
   font-size: x-large;
   position: relative;
-  margin: 100px;
-  height: 485px;
+  margin: 130px;
+  height: auto;
   width: auto;
 
   @media (max-width: 960px) {
@@ -21,6 +25,11 @@ const MainContainer = styled(Box)`
 const CommunitiesHeader = styled(Box)`
   display: flex;
   flex-direction: column;
+  margin-bottom: 120px;
+
+  @media (max-width: 960px) {
+    margin-bottom: 60px;
+  }
 `;
 
 const CommunitiesTitle = styled.p`
@@ -38,6 +47,25 @@ const CommunitiesTitle = styled.p`
   }
 `;
 
+const CommunitiesContent = styled(Box)`
+  display: grid;
+  justify-content: center;
+  padding-bottom: 100px;
+  margin: 0;
+  grid-template-columns: repeat(4, minmax(auto, 400px));
+  row-gap: 100px;
+
+  & > div:not(:last-child) {
+    flex: 1 0 15%;
+  }
+
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(1, minmax(auto, 400px));
+    row-gap: 50px;
+    margin: 0 60px;
+  }
+`;
+
 const Communities: React.FC = () => {
   return (
     <MainContainer>
@@ -45,8 +73,13 @@ const Communities: React.FC = () => {
         <CommunitiesTitle>Comunidades</CommunitiesTitle>
         <CommunitiesTitle>Amigas</CommunitiesTitle>
       </CommunitiesHeader>
-      {/* TODO: add communities */}
-      Communities
+
+      <CommunitiesContent>
+        {communitiesData.length &&
+          communitiesData.map((community, index) => (
+            <PolygonTile key={index} {...community} />
+          ))}
+      </CommunitiesContent>
     </MainContainer>
   );
 };
