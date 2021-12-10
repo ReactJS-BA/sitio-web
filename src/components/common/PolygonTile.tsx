@@ -5,9 +5,23 @@ import { Box } from "@material-ui/core";
 
 import Img, { ImageProps } from "src/components/common/Img";
 
+// PNG images
+import meetupJsPolygon from "src/assets/images/illustration/meetupjs_polygon.png";
+import vuenosAiresPolygon from "src/assets/images/illustration/vuenosaires_polygon.png";
+import baNodePolygon from "src/assets/images/illustration/banode_polygon.png";
+
+export type TileImgType = "meetupJS" | "vuenosAires" | "baNode";
+
+const staticTileImage: { [key in TileImgType]: string } = {
+  meetupJS: meetupJsPolygon,
+  vuenosAires: vuenosAiresPolygon,
+  baNode: baNodePolygon,
+};
+
 interface PolygonTileProps extends ImageProps {
   name: string;
   isGradientBackground?: boolean;
+  staticTile?: TileImgType;
 }
 
 const PolygonImg = styled(Img)`
@@ -67,13 +81,17 @@ const PolygonTile: React.FC<PolygonTileProps> = ({
   src,
   alt,
   isGradientBackground = false,
+  staticTile,
 }) => {
   const currentName = `@${name.trim().replace(/\s/g, "")}`;
 
   return (
     <PolygonTileContainer>
       <ImageWrapper $isLinearGradient={isGradientBackground}>
-        <PolygonImg src={src} alt={alt} />
+        <PolygonImg
+          src={staticTile ? staticTileImage[staticTile] : src}
+          alt={alt}
+        />
       </ImageWrapper>
 
       <PolygonItemName>{currentName}</PolygonItemName>

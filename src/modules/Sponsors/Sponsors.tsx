@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Box from "@material-ui/core/Box";
 
 import { ButtonBase as Button } from "src/components/buttons/ButtonBase";
+import sponsorDoor from "src/assets/images/illustration/sponsor_door.png";
 
 const MainContainer = styled(Box)`
   display: grid;
@@ -89,6 +90,17 @@ const StyledButton = styled(Button)`
   }
 `;
 
+const LogoContent = styled(Box)`
+  display: flex;
+  width: auto;
+  height: 500px;
+  background: url(${sponsorDoor}) center center no-repeat;
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
+`;
+
 const Sponsors: React.FC = () => {
   return (
     <MainContainer>
@@ -109,7 +121,9 @@ const Sponsors: React.FC = () => {
           Escribinos
         </StyledButton>
       </LayoutLeftSide>
-      <LayoutRightSide>LOGO?</LayoutRightSide>
+      <LayoutRightSide>
+        <LogoContent />
+      </LayoutRightSide>
     </MainContainer>
   );
 };
