@@ -51,7 +51,7 @@ const CommunitiesContent = styled(Box)`
   display: grid;
   justify-content: center;
   padding-bottom: 100px;
-  margin: 0 150px;
+  margin: 0;
   grid-template-columns: repeat(4, minmax(auto, 400px));
   row-gap: 100px;
 
