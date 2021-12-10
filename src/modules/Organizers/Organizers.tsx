@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { Box } from "@material-ui/core";
 
-import OrganizerTile from "src/modules/Organizers/OrganizerTile";
+import PolygonTile from "src/components/common/PolygonTile";
 import rectangleGroup from "src/assets/images/shapes/rectangleGroup.svg";
 
 import { organizerData } from "src/mock/organizers/organizerData";
@@ -73,7 +73,7 @@ const Organizers: React.FC = () => {
       <OrganizerContent>
         {organizerData.length &&
           organizerData.map((organizer, index) => (
-            <OrganizerTile key={index} {...organizer} />
+            <PolygonTile key={index} isGradientBackground {...organizer} />
           ))}
       </OrganizerContent>
     </MainWrapper>
