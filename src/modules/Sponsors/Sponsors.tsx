@@ -22,14 +22,12 @@ const LayoutLeftSide = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin: 0 150px;
 
   @media (max-width: 960px) {
     padding-top: 50px;
     padding-bottom: 70px;
     align-items: center;
-    margin: 0 150px;
   }
 `;
 
