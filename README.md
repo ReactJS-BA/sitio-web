@@ -44,3 +44,11 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Figma file
+
+[https://www.figma.com/file/74vsJs9FtgDHbvJSWyS8Ui/React-BA?node-id=205%3A1](https://www.figma.com/file/74vsJs9FtgDHbvJSWyS8Ui/React-BA?node-id=205%3A1)
+
+## Demo
+
+[https://adoring-khorana-24a6dd.netlify.app/](https://adoring-khorana-24a6dd.netlify.app/)
