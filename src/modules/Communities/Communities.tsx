@@ -66,6 +66,7 @@ const CommunitiesContent = styled(Box)`
   }
 `;
 
+// TODO: get data from API
 const Communities: React.FC = () => {
   return (
     <MainContainer>

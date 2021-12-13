@@ -3,6 +3,10 @@ import Box from "@material-ui/core/Box";
 
 import horizontalBar from "src/assets/images/shapes/horizontalBar.svg";
 
+import CardEvent from "src/components/dataDisplay/CardEvent";
+
+import { newEventData } from "src/mock/newEvent/newEventData";
+
 const MainContainer = styled(Box)`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -17,6 +21,7 @@ const MainContainer = styled(Box)`
     display: flex;
     flex-direction: column;
     border: 4px solid #64dedf;
+    height: auto;
   }
 `;
 
@@ -24,7 +29,7 @@ const LayoutLeftSide = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 150px;
+  margin-left: 50px;
 
   background: url(${horizontalBar}) bottom 125px right 105px no-repeat,
     url(${horizontalBar}) top 125px right 105px no-repeat;
@@ -43,24 +48,26 @@ const LayoutRightSide = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 150px;
+  margin-right: 200px;
 
   @media (max-width: 960px) {
     align-items: center;
     margin: 0;
+    padding: 25px;
   }
 `;
 
 const NextEventContent = styled(Box)`
-  height: 245px;
-  width: 375px;
+  height: auto;
+  width: auto;
+  padding: 35px;
   border: 1px solid #000000;
-  background-color: #e0e0e0;
+  background-color: #fff;
   border-radius: 32px;
+  max-width: 600px;
 
   @media (max-width: 960px) {
-    height: 245px;
-    width: 275px;
+    padding: 25px;
   }
 `;
 
@@ -79,16 +86,21 @@ const NextEventTitle = styled.p`
   }
 `;
 
+// TODO: get data from API
 const NextEvent: React.FC = () => {
+  const currentEvent = newEventData[0];
+
   return (
     <MainContainer>
       <LayoutLeftSide>
         <NextEventTitle>Proximo</NextEventTitle>
         <NextEventTitle>Evento</NextEventTitle>
       </LayoutLeftSide>
+
       <LayoutRightSide>
-        {/* TODO: Event content component */}
-        <NextEventContent></NextEventContent>
+        <NextEventContent>
+          <CardEvent {...currentEvent} />
+        </NextEventContent>
       </LayoutRightSide>
     </MainContainer>
   );
