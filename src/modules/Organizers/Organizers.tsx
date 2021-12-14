@@ -64,6 +64,7 @@ const OrganizerTitle = styled.p`
   }
 `;
 
+// TODO: get data from API
 const Organizers: React.FC = () => {
   return (
     <MainWrapper>
